@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inter, arial, sans-serif;
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+}
+
+.container {
+  min-height: 100dvh;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  width: 380px;
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.links li {
+  list-style: none;
+}
+.links a {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-decoration: none;
+  background-color: #333333;
+  padding: 14px 0;
+  width: 100%;
+  color: #fff;
+  margin-top: 16px;
+  border-radius: 4px;
+}
+
+.links a:hover {
+  background-color: #c5f82a;
+  color: #1f1f1f;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.card h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 14px;
+  color: #c5f82a;
+}
+
+.card p {
+  font-size: 14px;
+  color: #fff;
+}
+.attribution {
+  margin-top: 30px;
+  color: #333333;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .links a {
+    padding: 12px 0;
+    font-size: 13px;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+}
